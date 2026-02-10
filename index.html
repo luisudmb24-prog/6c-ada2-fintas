@@ -1,0 +1,226 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprendiendo el Trastorno de Identidad Disociativo (TID)</title>
+    <style>
+        /* Paleta de colores con alto contraste (WCAG AA) */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --link-color: #004a99;
+            --link-hover: #002d5e;
+            --focus-outline: #d97706; /* Color ámbar para visibilidad de foco */
+            --border-color: #404040;
+            --secondary-bg: #f3f4f6;
+        }
+
+        /* Reset y estilos base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 0;
+        }
+
+        /* Mejora de accesibilidad para teclado */
+        :focus {
+            outline: 4px solid var(--focus-outline);
+            outline-offset: 2px;
+        }
+
+        /* Saltarse al contenido principal (Accesibilidad) */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--link-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header {
+            background-color: var(--secondary-bg);
+            border-bottom: 3px solid var(--text-color);
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        nav {
+            margin-top: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--link-color);
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        nav a:hover {
+            color: var(--link-hover);
+            text-decoration: none;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        article {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1.25rem;
+            border-left: 5px solid var(--link-color);
+            padding-left: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        ul.symptoms-list {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        ul.symptoms-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .image-box {
+            margin: 2.5rem 0;
+            background-color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: var(--secondary-bg);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-top: 1px solid #ccc;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.75rem; }
+            h2 { font-size: 1.5rem; }
+            nav ul { flex-direction: column; gap: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Trastorno de Identidad Disociativo (TID)</h1>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#que-es">¿Qué es el TID?</a></li>
+                    <li><a href="#sintomas">Síntomas y Señales</a></li>
+                    <li><a href="#ayuda">Buscar Apoyo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <div class="container">
+            <article id="que-es">
+                <h2>Definición del Trastorno</h2>
+                <p>
+                    El Trastorno de Identidad Disociativo (TID), anteriormente conocido como trastorno de personalidad múltiple, es una condición de salud mental compleja. Se caracteriza por la presencia de dos o más estados de personalidad distintos o identidades que controlan el comportamiento de la persona en diferentes momentos.
+                </p>
+                <p>
+                    A menudo, este trastorno es una respuesta a un trauma grave y crónico experimentado durante la infancia (antes de los 6 a 9 años), funcionando como un mecanismo de defensa para compartimentar experiencias insoportables.
+                </p>
+
+                <div class="image-box">
+                    
+                    <img src="https://share.google/4pEeizXbEoQK78ODl" 
+                         alt="Fotografía conceptual de una persona frente a un espejo roto que muestra varios reflejos, representando la fragmentación de la identidad.">
+                </div>
+            </article>
+
+            <article id="sintomas">
+                <h2>Síntomas y Características Comunes</h2>
+                <p>Los síntomas del TID pueden afectar muchas áreas de la vida diaria. Algunos de los más comunes incluyen:</p>
+                <ul class="symptoms-list">
+                    <li><strong>Amnesia disociativa:</strong> Lapsos de memoria sobre eventos pasados, información personal o habilidades cotidianas.</li>
+                    <li><strong>Fugas disociativas:</strong> Encontrarse en un lugar sin recordar cómo se llegó allí.</li>
+                    <li><strong>Despersonalización:</strong> Sentir que uno está fuera de su propio cuerpo o que sus acciones son irreales.</li>
+                    <li><strong>Identidades alternas:</strong> Cada "alter" puede tener su propia historia, nombre, gestos y características físicas percibidas.</li>
+                </ul>
+            </article>
+
+            <article id="ayuda">
+                <h2>Recursos y Apoyo Profesional</h2>
+                <p>
+                    Es fundamental entender que el TID es tratable con la ayuda de profesionales especializados en trauma y disociación. El objetivo principal de la terapia suele ser la integración de las identidades o el establecimiento de una cooperación armoniosa entre ellas.
+                </p>
+                <p>
+                    Para obtener orientación detallada, puedes visitar el sitio oficial de la 
+                    <a href="https://www.isst-d.org/" target="_blank" rel="noopener">Sociedad Internacional para el Estudio del Trauma y la Disociación</a>, 
+                    donde encontrarás recursos tanto para pacientes como para familiares.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p><strong>Aviso importante:</strong> Esta página tiene fines informativos y no sustituye el diagnóstico de un profesional médico.</p>
+            <p>&copy; 2024 Portal de Salud Mental Accesible.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
